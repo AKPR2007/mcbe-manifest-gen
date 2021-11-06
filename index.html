@@ -22,8 +22,8 @@
         <br></td></tr><tr><td>type</td><td>: <select id="sel"><option value="1">resource pack</option><option value="2">data pack</option></select></td></tr></tbody>
         </table><br>
         <button type="button" id="ge">generate manifest.json</button><br><br>
-            Result
-        <div class="rc"><code id="pv"></code></div> <button type="button" id="co" style="display:none">Copy</button>
+            output
+        <div class="rc"><code id="pv"></code></div> <button type="button" id="co" style="display:none">copy code</button>
         <script type="text/javascript">
             function rs4d(){return Math.random().toString(16).substr(2,4)}
             function cuid(){return rs4d()+rs4d()+"-"+rs4d()+"-"+rs4d()+"-"+rs4d()+"-"+rs4d()+rs4d()+rs4d()}
@@ -39,7 +39,7 @@
                     document.body.appendChild(mt);
                     mt.value = res; mt.select();
                     document.execCommand("copy");
-                    alert("copied to clipboard");
+                    alert("code has been copied to clipboard. now open your ide then create manifest.json and paste the code");
                     document.body.removeChild(mt);
                 }
             }
