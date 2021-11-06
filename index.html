@@ -4,8 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-        <title>manifestg</title>
-        <link href="https://mcbamboo.github.io/mbabo_asset/style.css" rel="stylesheet">
+        <title>ManifestGen - AK PR</title>
         <style media="screen">
             body{padding: 10px; font-family: "Quicksand"}
             table{padding: 5px; border: solid 1px dimgrey; width:100%}
@@ -16,13 +15,13 @@
         </style>
     </head>
     <body class="bcolor3">
-        <h3 style="text-align:center">MCBE manifest.json</h3>
-        <table><tbody><tr><td><label for="nr">name</label></td><td>: <input type="text" name="nr" id="n"><br></td></tr><tr><td><label for="des">description</label></td><td>: <input type="text" name="des" id="d">
-        <br></td></tr><tr><td><label for="ver">version</label></td><td>: <input type="text" name="verc1" id="vc1" maxlength="2"> <input type="text" name="verc2" id="vc2" maxlength="2"> <input type="text" name="verc3" id="vc3" maxlength="2">
-        <br></td></tr><tr><td><label for="mver">min engine version</label></td><td>: <input type="text" name="mver" id="evc1" maxlength="2"> <input type="text" name="mver" id="evc2" maxlength="2"> <input type="text" name="mver" id="evc3" maxlength="2">
-        <br></td></tr><tr><td>type</td><td>: <select id="sel"><option value="1">resources</option><option value="2">data</option></select></td></tr></tbody>
+        <h3 style="text-align:center">ManifestGen MCBE by *AK PR*</h3>
+        <table><tbody><tr><td><label for="nr">pack name</label></td><td>: <input type="text" name="nr" id="n"><br></td></tr><tr><td><label for="des">description</label></td><td>: <input type="text" name="des" id="d">
+        <br></td></tr><tr><td><label for="ver">pack version</label></td><td>: <input type="text" name="verc1" id="vc1" maxlength="2"> <input type="text" name="verc2" id="vc2" maxlength="2"> <input type="text" name="verc3" id="vc3" maxlength="2">
+        <br></td></tr><tr><td><label for="mver">pack min. engine version</label></td><td>: <input type="text" name="mver" id="evc1" maxlength="2"> <input type="text" name="mver" id="evc2" maxlength="2"> <input type="text" name="mver" id="evc3" maxlength="2">
+        <br></td></tr><tr><td>type</td><td>: <select id="sel"><option value="1">resource pack</option><option value="2">data pack</option></select></td></tr></tbody>
         </table><br>
-        <button type="button" id="ge">create</button><br><br>
+        <button type="button" id="ge">generate manifest.json</button><br><br>
             Result
         <div class="rc"><code id="pv"></code></div> <button type="button" id="co" style="display:none">Copy</button>
         <script type="text/javascript">
